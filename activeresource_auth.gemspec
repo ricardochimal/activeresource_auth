@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 	s.rubygems_version = "1.1.1"
-	s.platform = "ruby"
+	s.platform = Gem::Platform::RUBY
 	s.name = "activeresource_auth"
 	s.description = "Improves ActiveResource HTTP Basic Auth Support"
 	s.summary = "ActiveResource + Better HTTP Auth"
