@@ -1,0 +1,10 @@
+The purpose of this gem is to provide better http auth basic support into ActiveResource.  Encoding it in the url makes me gag and it should make you gag too.
+
+Usage:
+
+	require 'activeresource_auth'
+	
+	class MyResource
+		site = "http://remote.com"
+		auth_as "myuser", "mypass"
+	end
