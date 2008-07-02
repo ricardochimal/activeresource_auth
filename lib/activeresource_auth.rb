@@ -26,6 +26,6 @@ class ActiveResource::Base
 
 	def self.clear_auth
 		connection.basic_auth_user = nil
-		connection.basic_password_user = nil
+		connection.basic_auth_password = nil
 	end
 end
