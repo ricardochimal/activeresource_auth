@@ -5,7 +5,7 @@ class ActiveResource::Connection
 
 	def authorization_header
 		if (@basic_auth_user || @basic_auth_pass)
-			build_auth_header(@basic_auth_header, @basic_auth_password)
+			build_auth_header(@basic_auth_user, @basic_auth_password)
 		elsif (@site.user || @site.password) # remain backwards compatible
 			build_auth_header(@site.user, @site.password)
 		else
